@@ -1,0 +1,248 @@
+.root{
+    -fx-background-image: url("res/chernoe_derevo.jpg");
+   // -fx-background-image: url("res/look.com.ua-16447.jpg");
+   // -fx-background-image: url("res/temnyj-fon12.jpg");
+    -fx-background-size: cover;
+}
+
+#anP1, #anP2, #anP3, #anP4 {
+   // -fx-background-image: url("res/chernoe_derevo.jpg");
+   // -fx-background-size: cover;
+    -fx-border-color: rgba(0,0,0,0.9);
+
+
+}
+
+/* Buttons for choosing topic */
+#btnCSS{
+    -fx-background-image: url("res/css_grey.png");
+    -fx-font-size: 0;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-rotate: -5;
+}
+
+#btnCSS:hover{
+    -fx-background-image: url("res/css_color.png") ;
+    -fx-background-size: cover;
+}
+
+#btnHTML{
+    -fx-background-image: url("res/html_grey.png");
+    -fx-font-size: 0;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-rotate: -40;
+}
+
+#btnHTML:hover{
+    -fx-background-image: url("res/html_color.png") ;
+    -fx-background-size: cover;
+}
+
+#btnJava{
+    -fx-background-image: url("res/java_grey.png");
+    -fx-font-size: 0;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-rotate: 15;
+}
+
+#btnJava:hover{
+    -fx-background-image: url("res/java_color.png") ;
+    -fx-background-size: cover;
+}
+
+#btnJS{
+    -fx-background-image: url("res/js_grey.png");
+    -fx-font-size: 0;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-rotate: 20;
+}
+
+#btnJS:hover{
+    -fx-background-image: url("res/js_color.png") ;
+    -fx-background-size: cover;
+}
+
+#btnSwift{
+    -fx-background-image: url("res/swift_grey.png");
+    -fx-font-size: 0;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    //-fx-rotate: 10;
+}
+
+#btnSwift:hover{
+    -fx-background-image: url("res/swift_color.png") ;
+    -fx-background-size: cover;
+}
+
+#btnCPlus{
+    -fx-background-image: url("res/c++_grey.png");
+    -fx-font-size: 0;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-rotate: -5;
+}
+
+#btnCPlus:hover{
+    -fx-background-image: url("res/c++_color.png") ;
+    -fx-background-size: cover;
+}
+
+#btnCSharp{
+    -fx-background-image: url("res/2.png");
+    -fx-font-size: 0;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-rotate: -10;
+}
+
+#btnCSharp:hover{
+    -fx-background-image: url("res/si_sharp.png") ;
+    -fx-background-size: cover;
+}
+
+#btnPHP{
+    -fx-background-image: url("res/php_grey.png");
+    -fx-font-size: 0;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-rotate: 30;
+}
+#btnPHP:hover{
+    -fx-background-image: url("res/php_color.png") ;
+    -fx-background-size: cover;
+}
+
+#btnPython{
+    -fx-background-image: url("res/python_grey.png");
+    -fx-font-size: 0;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-rotate: 10;
+}
+
+#btnPython:hover{
+    -fx-background-image: url("res/python_color.png") ;
+    -fx-background-size: cover;
+}
+
+#btnRuby{
+    -fx-background-image: url("res/ruby_grey.png");
+    -fx-font-size: 0;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-rotate: 60;
+}
+
+#btnRuby:hover{
+    -fx-background-image: url("res/ruby_color.png") ;
+    -fx-background-size: cover;
+}
+/* Buttons for choosing topic END */
+
+/* TitledPane style */
+.titled-pane > .title{
+    -fx-background-color: transparent, transparent, rgba(20,20,20,0.5);
+}
+
+.titled-pane > *.content
+{
+    -fx-background-color: transparent, transparent, transparent;
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-padding: -1;
+}
+
+.titled-pane > .title > .arrow-button
+{
+    -fx-background-color: null;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0.0em 0.25em 0.0em 0.0em; /* 0 3 0 0 */
+}
+
+.titled-pane > .title > .arrow-button .arrow
+{
+    -fx-background-color: orange, orange;
+    -fx-background-insets: 0;
+    -fx-padding: 0.25em 0.3125em 0.25em 0.3125em; /* 3 3.75 3 3.75 */
+    //-fx-padding: 0.0em 0.25em 0.0em 0.0em; /* 0 3 0 0 */
+    -fx-shape: "M 0 0 h 7 l -3.5 4 z";
+}
+
+.titled-pane:focused > .title > .arrow-button .arrow
+{
+    -fx-background-color: orange, orange, orange;
+}
+
+.titled-pane:focused
+{
+    -fx-text-fill: orange;
+}
+/* TitledPane style END */
+
+/* Server, Client, RepeatGame buttons style*/
+#btnClient, #btnServer, #btnRepeatGame
+{
+    -fx-background-color: rgba(10,10,10,0.6);
+    -fx-background-radius: 80px;
+    -fx-text-fill: lightgray;
+    -fx-font-size: 20px;
+    -fx-font-family: "Baskerville Old Face";
+}
+
+#btnClient:hover, #btnServer:hover, #btnRepeatGame:hover
+{
+    -fx-background-color:  rgba(10,10,10,0.9);
+    -fx-text-fill: orange;
+}
+
+#btnClient:pressed, #btnServer:pressed, #btnRepeatGame:pressed
+{
+    //-fx-background-color: linear-gradient(orange , rgba(10,10,10,0.8) 10%) ;
+    -fx-text-fill: darkred;
+}
+/* Server, Client, RepeatGame buttons style END */
+
+/* Answers buttons style */
+#btnAnswer1, #btnAnswer2, #btnAnswer3, #btnAnswer4{
+    -fx-background-color: rgba(10,10,10,0.6);
+    -fx-background-radius: 20px;
+    -fx-text-fill: lightgray;
+    -fx-font-size: 18px;
+    -fx-font-family: "Baskerville Old Face";
+}
+
+#btnAnswer1:hover, #btnAnswer2:hover, #btnAnswer3:hover, #btnAnswer4:hover{
+    -fx-background-color:  rgba(10,10,10,0.9);
+    -fx-text-fill: orange;
+}
+
+#btnAnswer1:pressed, #btnAnswer2:pressed, #btnAnswer3:pressed, #btnAnswer4:pressed{
+    //-fx-background-color:  rgba(10,10,10,0.9);
+    -fx-text-fill: darkred;
+}
+/* Answers buttons style END */
+
+/* Progress indicators style */
+#piMainYourRes, #piMainOppRes
+{
+    -fx-progress-color: rgba(251, 176, 27, 0.75);
+    -fx-opacity: 70%;
+}
+.progress-indicator .percentage
+{
+    -fx-fill: azure;
+}
+
+#piAddYourRes1, #piAddYourRes2, #piAddOppRes1, #piAddOppRes2
+{
+    -fx-progress-color: rgba(141, 143, 141, 0.73);
+    -fx-opacity: 70%;
+}
+
+
+/* Progress indicators style END */

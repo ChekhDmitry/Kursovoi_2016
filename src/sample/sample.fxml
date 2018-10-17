@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Accordion fx:id="a1" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" stylesheets="@MainCSS.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <panes>
+    <TitledPane id="tP1" fx:id="tpStartMenu" animated="false" text="Start menu">
+      <content>
+        <AnchorPane id="anP1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="301.0" fitWidth="774.0" layoutX="38.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/logo1.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.3" />
+                     </effect>
+                  </ImageView>
+                  <TextField fx:id="tfNickname" layoutX="297.0" layoutY="265.0" prefHeight="25.0" prefWidth="268.0" promptText="Write your nickname...">
+                     <font>
+                        <Font name="Baskerville Old Face" size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="tfServerIP" layoutX="509.0" layoutY="372.0" prefHeight="25.0" prefWidth="191.0" promptText="Write first player's IP...">
+                     <font>
+                        <Font name="Baskerville Old Face" size="14.0" />
+                     </font></TextField>
+                  <Button id="btnServer" layoutX="68.0" layoutY="415.0" mnemonicParsing="false" onAction="#startServer" prefHeight="58.0" prefWidth="186.0" text="Start server" />
+                  <Button id="btnClient" layoutX="503.0" layoutY="414.0" mnemonicParsing="false" onAction="#startClient" prefHeight="60.0" prefWidth="198.0" text="Start client" />
+                  <Label layoutX="170.0" layoutY="257.0" prefHeight="41.0" prefWidth="139.0" text="Your nickname:" textFill="#cdc7c7">
+                     <font>
+                        <Font name="Baskerville Old Face" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect></Label>
+                  <Label layoutX="431.0" layoutY="374.0" text="Server IP:" textFill="#b9b5b5">
+                     <font>
+                        <Font name="Baskerville Old Face" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect></Label>
+                  <Label fx:id="lbMyIP" layoutX="71.0" layoutY="374.0" text="My IP:" textFill="#b2aea6">
+                     <font>
+                        <Font name="Baskerville Old Face" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect></Label>
+                  <Label layoutX="71.0" layoutY="309.0" text="First Player:" textFill="#a87c04">
+                     <font>
+                        <Font name="Colonna MT" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow spread="0.74" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="493.0" layoutY="309.0" text="Second Player:" textFill="#a87c04">
+                     <font>
+                        <Font name="Colonna MT" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow spread="0.74" />
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="280.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/sign_orange.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="tpChoosingTopic" animated="false" text="Choosing topic">
+      <content>
+        <AnchorPane id="anP2" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button id="btnCSS" fx:id="btnCSSQ" layoutX="236.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnCssClick" prefHeight="126.0" prefWidth="132.0" />
+                  <Button id="btnHTML" fx:id="btnHTMLQ" layoutX="165.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnHtmlClick" prefHeight="124.0" prefWidth="124.0" />
+                  <Button id="btnSwift" fx:id="btnSwiftQ" layoutX="410.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnSwiftClick" prefHeight="103.0" prefWidth="104.0" />
+                  <Button id="btnJS" fx:id="btnJSQ" layoutX="321.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnJsClick" prefHeight="137.0" prefWidth="139.0" />
+                  <Button id="btnPHP" fx:id="btnPHPQ" layoutX="374.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnPhpClick" prefHeight="113.0" prefWidth="120.0" />
+                  <Button id="btnJava" fx:id="btnJavaQ" layoutX="495.0" layoutY="166.0" mnemonicParsing="false" onAction="#btnJavaClick" prefHeight="107.0" prefWidth="107.0" />
+                  <Button id="btnPython" fx:id="btnPythonQ" layoutX="302.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnPythonClick" prefHeight="117.0" prefWidth="118.0" />
+                  <Button id="btnCSharp" fx:id="btnCsharpQ" layoutX="220.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnCsharpClick" prefHeight="120.0" prefWidth="124.0" />
+                  <Button id="btnCPlus" fx:id="btnCpluseQ" layoutX="460.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnCplusClick" prefHeight="120.0" prefWidth="120.0" />
+                  <Button id="btnRuby" fx:id="btnRubyQ" layoutX="548.0" layoutY="227.0" mnemonicParsing="false" onAction="#btnRubyClick" prefHeight="93.0" prefWidth="103.0" />
+                  <Label fx:id="lbgY" layoutX="33.0" layoutY="442.0" prefHeight="45.0" prefWidth="215.0" text="Your opponent:" textFill="#cdc5c5">
+                     <font>
+                        <Font name="Colonna MT" size="32.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label fx:id="lbNicknameOpponent" layoutX="252.0" layoutY="442.0" prefHeight="45.0" prefWidth="218.0" text="Label" textFill="#b2760f">
+                     <font>
+                        <Font name="Colonna MT" size="32.0" />
+                     </font>
+                     <effect>
+                        <DropShadow spread="0.41" />
+                     </effect>
+                  </Label>
+                  <Label fx:id="lbChoice" layoutX="673.0" layoutY="445.0" prefHeight="28.0" prefWidth="113.0" textFill="#b2760f">
+                     <font>
+                        <Font name="Colonna MT" size="32.0" />
+                     </font>
+                     <effect>
+                        <DropShadow spread="0.41" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="491.0" layoutY="445.0" text="Your choice:" textFill="#e8e3e3">
+                     <font>
+                        <Font name="Colonna MT" size="32.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="282.0" layoutX="270.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/sign_orange.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.74" />
+                     </effect>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="tpGameAction" animated="false" text="Game action">
+      <content>
+        <AnchorPane id="anP3" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button id="btnAnswer1" fx:id="btnAnswer1" alignment="CENTER" layoutX="83.0" layoutY="251.0" mnemonicParsing="false" onAction="#btnAnswer1Click" prefHeight="81.0" prefWidth="236.0" text="Button" wrapText="true" />
+                  <Button id="btnAnswer2" fx:id="btnAnswer2" alignment="CENTER" layoutX="462.0" layoutY="251.0" mnemonicParsing="false" onAction="#btnAnswer2Click" prefHeight="81.0" prefWidth="246.0" text="Button" wrapText="true" />
+                  <Button id="btnAnswer3" fx:id="btnAnswer3" alignment="CENTER" layoutX="83.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnAnswer3Click" prefHeight="81.0" prefWidth="236.0" text="Button" wrapText="true" />
+                  <Button id="btnAnswer4" fx:id="btnAnswer4" alignment="CENTER" layoutX="464.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnAnswer4Click" prefHeight="81.0" prefWidth="244.0" text="Button" wrapText="true" />
+                  <Label fx:id="lbQuestion" alignment="CENTER" layoutX="82.0" layoutY="28.0" prefHeight="208.0" prefWidth="627.0" text="Label" textFill="#bcadad" wrapText="true">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow spread="0.4" />
+                     </effect>
+                  </Label>
+                  <ImageView fx:id="iViewQuestions" fitHeight="113.0" fitWidth="113.0" layoutX="334.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+      <TitledPane fx:id="tpResult" animated="false" text="Result">
+        <content>
+          <AnchorPane id="anP4" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="800.0">
+               <children>
+                  <ProgressIndicator id="piMainYourRes" fx:id="piYourMainResult" blendMode="HARD_LIGHT" layoutX="72.0" layoutY="124.0" opacity="0.9" prefHeight="199.0" prefWidth="201.0" progress="0.0" />
+                  <ProgressIndicator id="piMainOppRes" fx:id="piOpponentMainResult" blendMode="HARD_LIGHT" layoutX="510.0" layoutY="124.0" opacity="0.9" prefHeight="199.0" prefWidth="201.0" progress="0.0" />
+                  <ProgressIndicator id="piAddYourRes1" fx:id="piYourAdditionalResult1" blendMode="HARD_LIGHT" layoutX="60.0" layoutY="356.0" opacity="0.9" prefHeight="92.0" prefWidth="112.0" progress="0.0" />
+                  <ProgressIndicator id="piAddYourRes2" fx:id="piYourAdditionalResult2" blendMode="HARD_LIGHT" layoutX="172.0" layoutY="356.0" opacity="0.9" prefHeight="92.0" prefWidth="112.0" progress="0.0" />
+                  <ProgressIndicator id="piAddOppRes1" fx:id="piOpponentAdditionalResult1" blendMode="HARD_LIGHT" layoutX="499.0" layoutY="356.0" opacity="0.9" prefHeight="92.0" prefWidth="112.0" progress="0.0" />
+                  <ProgressIndicator id="piAddOppRes2" fx:id="piOpponentAdditionalResult2" blendMode="HARD_LIGHT" layoutX="611.0" layoutY="356.0" opacity="0.9" prefHeight="92.0" prefWidth="112.0" progress="0.0" />
+                  <Label fx:id="lbYourNicknameResult" alignment="CENTER" layoutX="98.0" layoutY="93.0" prefHeight="31.0" prefWidth="148.0" text="Label" textFill="#bcb8b8">
+                     <font>
+                        <Font name="Colonna MT" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label fx:id="lbOpponentNicknameResult" alignment="CENTER" layoutX="537.0" layoutY="93.0" prefHeight="31.0" prefWidth="148.0" text="Label" textFill="#bcb8b8">
+                     <font>
+                        <Font name="Colonna MT" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label fx:id="lbWinnerNickname" alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="39.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="44.0" prefWidth="611.0" text="Waiting for your opponent...&#10;" textAlignment="CENTER" textFill="#bcb8b8">
+                     <font>
+                        <Font name="Colonna MT" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Button id="btnRepeatGame" layoutX="301.0" layoutY="448.0" mnemonicParsing="false" onAction="#btnRepeatGameClick" prefHeight="47.0" prefWidth="170.0" text="Repeat game..." />
+                  <Label fx:id="lbWinnerNick" alignment="CENTER" layoutX="145.0" prefHeight="39.0" prefWidth="482.0" text="Label" textFill="#b2760f">
+                     <font>
+                        <Font name="Colonna MT" size="32.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label fx:id="lbYourAdditionalResult1" alignment="CENTER" layoutX="65.0" layoutY="323.0" prefHeight="31.0" prefWidth="102.0" text="Label" textFill="#b2760f">
+                     <font>
+                        <Font name="Colonna MT" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label fx:id="lbYourAdditionalResult2" alignment="CENTER" layoutX="177.0" layoutY="323.0" prefHeight="31.0" prefWidth="102.0" text="Label" textFill="#b2760f">
+                     <font>
+                        <Font name="Colonna MT" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label fx:id="lbOpponentAdditionalResult1" alignment="CENTER" layoutX="504.0" layoutY="323.0" prefHeight="31.0" prefWidth="102.0" text="Label" textFill="#b2760f">
+                     <font>
+                        <Font name="Colonna MT" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label fx:id="lbOpponentAdditionalResult2" alignment="CENTER" layoutX="616.0" layoutY="323.0" prefHeight="31.0" prefWidth="102.0" text="Label" textFill="#b2760f">
+                     <font>
+                        <Font name="Colonna MT" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children></AnchorPane>
+        </content>
+      </TitledPane>
+  </panes>
+</Accordion>
